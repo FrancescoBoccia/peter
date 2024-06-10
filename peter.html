@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Page with Background Image and Audio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="background-audio" autoplay muted>
+        <source src="Again.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="links">
+        <a href="page1.html">Page 1</a>
+        <a href="page2.html">Page 2</a>
+        <a href="page3.html">Page 3</a>
+        <a href="page4.html">Page 4</a>
+    </div>
+    <script>
+        window.addEventListener('load', () => {
+            const audio = document.getElementById('background-audio');
+            audio.muted = false;
+        });
+    </script>
+</body>
+</html>
